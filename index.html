@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fleur Atelier — авторские букеты и цветочные композиции с доставкой">
+    <title>Fleur Atelier — цветочный магазин</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== ШАПКА ===================== -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Fleur<span>Atelier</span></a>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#catalog" class="nav__link">Букеты</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== ОБЛОЖКА ===================== -->
+    <section class="hero">
+        <div class="hero__content container">
+            <p class="hero__tag">Авторская флористика</p>
+            <h1 class="hero__title">Цветы,<br>которые говорят<br>за вас</h1>
+            <p class="hero__text">
+                Собираем букеты вручную каждый день. Доставим по Москве
+                в течение двух часов и поможем сказать самое важное.
+            </p>
+            <a href="#catalog" class="btn btn--primary">Смотреть букеты</a>
+        </div>
+        <div class="hero__decor" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== КАТАЛОГ ===================== -->
+    <section class="catalog container" id="catalog">
+        <header class="catalog__head">
+            <h2 class="section-title">Букеты недели</h2>
+            <p class="section-lead">Свежие композиции от наших флористов</p>
+        </header>
+
+        <div class="cards">
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=700&q=80" alt="Букет «Пион и роза»">
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Пион и роза</h3>
+                    <p class="card__desc">Пышный букет из розовых пионов и кремовых роз в крафтовой упаковке.</p>
+                    <span class="card__price">4 500 ₽</span>
+                    <button class="btn btn--outline">Подробнее</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?w=700&q=80" alt="Букет «Тюльпаны»">
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Тюльпаны весенние</h3>
+                    <p class="card__desc">Двадцать пять пастельных тюльпанов — нежный подарок без повода.</p>
+                    <span class="card__price">2 900 ₽</span>
+                    <button class="btn btn--outline">Подробнее</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card__img">
+                    <img src="https://images.unsplash.com/photo-1567696153798-9111f9cd3d0d?w=700&q=80" alt="Букет «Полевой микс»">
+                </div>
+                <div class="card__body">
+                    <h3 class="card__title">Полевой микс</h3>
+                    <p class="card__desc">Ромашки, васильки и зелень. Лёгкий букет в стиле прованс.</p>
+                    <span class="card__price">3 300 ₽</span>
+                    <button class="btn btn--outline">Подробнее</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ===================== ИНФОРМАЦИОННЫЙ БЛОК ===================== -->
+    <section class="info" id="about">
+        <div class="container info__grid">
+            <div class="info__text">
+                <h2 class="section-title section-title--left">Почему выбирают нас</h2>
+                <p>
+                    Мы открылись в 2014 году как маленькая мастерская на Патриарших.
+                    Сегодня Fleur Atelier — это команда из 12 флористов, собственный
+                    цех и более 8 000 счастливых клиентов.
+                </p>
+                <ul class="info__list">
+                    <li>Свежие цветы из Нидерландов и Эквадора</li>
+                    <li>Доставка по Москве за 2 часа</li>
+                    <li>Индивидуальные композиции на заказ</li>
+                    <li>Открытки и подарки к букету</li>
+                </ul>
+            </div>
+            <div class="info__visual">
+                <div class="info__circle info__circle--one"></div>
+                <div class="info__circle info__circle--two"></div>
+                <div class="info__card">
+                    <p class="info__card-number">12</p>
+                    <p class="info__card-label">флористов в команде</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ПОДВАЛ ===================== -->
+    <footer class="footer" id="contacts">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <p class="footer__logo">Fleur<span>Atelier</span></p>
+                <p class="footer__note">Авторская флористика с 2014 года</p>
+            </div>
+            <div class="footer__col">
+                <p class="footer__title">Контакты</p>
+                <p>+7 (495) 120-45-67</p>
+                <p>hello@fleuratelier.ru</p>
+                <p>Москва, Малая Бронная, 12</p>
+            </div>
+            <div class="footer__col">
+                <p class="footer__title">Разделы</p>
+                <p><a href="#catalog" class="footer__link">Букеты</a></p>
+                <p><a href="#about" class="footer__link">О нас</a></p>
+                <p><a href="#contacts" class="footer__link">Контакты</a></p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Fleur Atelier. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
